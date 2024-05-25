@@ -13,103 +13,124 @@
         <img class="header_img" src="img/logo.png" alt="">
         <nav>
             <ul class="header_list">
-                <li>Home</li>
-                <li>Carros</li>
+                <a class="list_item"> <li>Home</li> </a>
+                <a class="list_item" href="#cars"> <li>Carros</li> </a>
                 <li>Fale Conosco</li>
             </ul>
         </nav>
     </header>
 
-    <section class="main_content">
-        <div class="list">
-            <div class="item active">
-                <div class="car_img">
-                    <img src="/img/911.png" alt="imagem porsche 911">
-                </div>
-                <div class="content">
-                    <p class="content_text">
-                        Porsche
-                    </p>
-                    <h2>
-                        911 Turbo
-                    </h2>
-                    <p class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
-                        laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam iure
-                        possimus officia? Iste, sit?
-                    </p>
+    <main class="main">
 
-                    <button class="information">
-                        Saiba Mais
-                    </button>
+        <section class="teste">
+            <div>
+                <h1>Onde estamos</h1>
+                <div id="map">
+                    
                 </div>
+
             </div>
             
-            <div class="item">
-                <div class="car_img">
-                    <img src="/img/ferraisf90.png" alt="imagem ferrari sf90">
+            <div>
+                <img src="img/logo.png" alt="">
+            </div>
+
+        </section>
+
+        <section class="main_content" id="cars">
+            <div class="list">
+                <div class="item active">
+                    <div class="car_img">
+                        <img src="/img/911.png" alt="imagem porsche 911">
+                    </div>
+                    <div class="content">
+                        <p class="content_text">
+                            Porsche
+                        </p>
+                        <h2>
+                            911 Turbo
+                        </h2>
+                        <p class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
+                            laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam
+                            iure
+                            possimus officia? Iste, sit?
+                        </p>
+
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+                    </div>
                 </div>
-                <div class="content">
-                    <p class="content_text">
-                        Ferrari
-                    </p>
-                    <h2>
-                        SF90
-                    </h2>
-                    <p class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
-                        laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam iure
-                        possimus officia? Iste, sit?
-                    </p>
-                    <button class="information">
-                        Saiba Mais
-                    </button>
+
+                <div class="item">
+                    <div class="car_img">
+                        <img src="/img/ferraisf90.png" alt="imagem ferrari sf90">
+                    </div>
+                    <div class="content">
+                        <p class="content_text">
+                            Ferrari
+                        </p>
+                        <h2>
+                            SF90
+                        </h2>
+                        <p class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
+                            laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam
+                            iure
+                            possimus officia? Iste, sit?
+                        </p>
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <div class="car_img">
+                        <img src="/img/GT3RS.png" alt="imagem porsche GT3 RS">
+                    </div>
+                    <div class="content">
+                        <p class="content_text">
+                            Porsche
+                        </p>
+                        <h2>
+                            GT3 RS
+                        </h2>
+                        <p class="description">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
+                            laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam
+                            iure
+                            possimus officia? Iste, sit?
+                        </p>
+                        <button class="information">
+                            Saiba Mais
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <div class="item">
-                <div class="car_img">
-                    <img src="/img/GT3RS.png" alt="imagem porsche GT3 RS">
-                </div>
-                <div class="content">
-                    <p class="content_text">
-                        Porsche
-                    </p>
-                    <h2>
-                        GT3 RS
-                    </h2>
-                    <p class="description">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae itaque rem delectus
-                        laboriosam excepturi nobis odio, dolorem hic, atque minus ipsum, nostrum enim aut veniam iure
-                        possimus officia? Iste, sit?
-                    </p>
-                    <button class="information">
-                        Saiba Mais
-                    </button>
-                </div>
+            <div class="arrows">
+                <button id="prev">
+                    <img src="img/rightArrow.png" alt="">
+                </button>
+                <button id="next">
+                    <img src="img/rightArrow.png" alt="">
+                </button>
             </div>
-        </div>
 
-        <div class="arrows">
-            <button id="prev">
-                <img src="img/rightArrow.png" alt="">
-            </button>
-            <button id="next">
-                <img src="img/rightArrow.png" alt="">
-            </button>
-        </div>
+            <div class="indicators">
+                <div class="number">01</div>
+                <ul>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
 
-        <div class="indicators">
-            <div class="number">01</div>
-            <ul>
-                <li class="active"></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
+        </section>
 
-    </section>
-
+    </main>
 
     <script src="script.js"></script>
 </body>
