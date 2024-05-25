@@ -21,7 +21,7 @@ function setSlider() {
     indicator.querySelector('.number').innerHTML = `0${active + 1}`;
 }
 
-prevButton.onclick = function (){
+prevButton.onclick = function () {
     list.style.setProperty('--calculation', -1)
     active = active - 1 < 0 ? lastPosition : active - 1;
     setSlider();
@@ -29,10 +29,10 @@ prevButton.onclick = function (){
 }
 
 
-nextButton.onclick = function (){
+nextButton.onclick = function () {
     list.style.setProperty('--calculation', 1);
     active += 1;
-    if (active > lastPosition){
+    if (active > lastPosition) {
         active = active % items.length;
     }
     setSlider();

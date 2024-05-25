@@ -12,7 +12,7 @@ body {
     background-color: black;
     color: white;
     font-size: 16px;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -40,9 +40,41 @@ header {
 .header_list {
     display: grid;
     grid-template-columns: repeat(3, 200px);
+    text-decoration: none;
 }
 
-section {
+.list_item {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    width: 60px;
+
+    & li:hover::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 100%;
+        height: 1px;
+        background-color: #EEEEEE;
+    }
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+}
+
+.teste {
+    background-image: radial-gradient(#470964, #791fd3);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.main_content {
     background-image: radial-gradient(#470964, #791fd3);
     height: 100vh;
     position: relative;
@@ -54,8 +86,10 @@ section {
         position: relative;
 
         & .item {
-            position: absolute; /*para posicionar o item em um local exato da tela*/
-            inset: 0; /*define top, bottom, left e right como 0*/
+            position: absolute;
+            /*para posicionar o item em um local exato da tela*/
+            inset: 0;
+            /*define top, bottom, left e right como 0*/
 
             & .car_img {
                 position: absolute;
@@ -211,7 +245,7 @@ section {
 }
 
 /* Criando a animação do carro */
-section {
+.main_content {
     & .list {
         --calculation: 1;
 
@@ -279,3 +313,4 @@ section {
         }
     }
 }
+
