@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Review</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +20,7 @@
             <a class="list_item" href="">
                 Home
             </a>
-            <a class="list_item" href="#cars">
+            <a class="list_item" href="#catalog">
                 Carros
             </a>
             <a class="list_item" href="">
@@ -121,17 +121,348 @@
 
         </section>
 
-        <section class="cars" id="cars">
-            <h1>
-                 Aqui vai ser o catálogo dos carros   
-            </h1>
-            <div class="search_cars">
-                <h1>
-                    
-                </h1>
+        <section class="catalog" id="catalog">
+            <h2> BUSCAR VEÍCULO </h2>
+            <form action="" class="search_cars_forms">
+                <div class="search_cars">
+                    <div class="checkboxes">
+                        <div class="styled-checkbox">
+                            <label for="used">
+                                <input type="checkbox" id="used" name="used">
+                                <span>Seminovos</span>
+                            </label>
+                        </div>
+                        <div class="styled-checkbox">
+                            <label for="zero">
+                                <input type="checkbox" id="zero" name="zero">
+                                <span>0 Km</span>
+                            </label>
+                        </div>
+                        <div class="styled-checkbox">
+                            <label for="seven">
+                                <input type="checkbox" id="seven" name="seven">
+                                <span>7 lugares</span>
+                            </label>
+                        </div>
+                        <div class="styled-checkbox">
+                            <label for="armored">
+                                <input type="checkbox" id="armored" name="armored">
+                                <span>Blindado</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="car_search_input">
+                        <input type="submit" class="car_submit_input" value="Procurar">
+                    </div>
+                </div>
+            </form>
+            
+            <h2 class="title_estoque">ESTOQUE</h2>
+
+            <div class="estoque">
+                <div class="card_car">
+                    <div class="box_photo">
+                        <div class="item_img">
+                            <img class="box_img" src="img/991_cat.png" alt="">
+                        </div>
+                    </div>
+                    <div class="car_description">
+                        <h3 class="offers">
+                            <a class="buy_link" href="">
+                                Porsche 911
+                            </a>
+                        </h3>
+                        <span class="version">
+                            3.6 
+                        </span>
+                    </div>
+                    <ul class="box_specs">
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="car_value">
+                        <span class="coin">
+                            R$
+                        </span>
+                        <span class="value">
+                            998.000,00
+                        </span>
+                    </div> 
+                
+                </div>
+                <div class="card_car">
+                    <div class="box_photo">
+                        <div class="item_img">
+                            <img class="box_img" src="img/911_catalog.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="car_description">
+                        <h3 class="offers">
+                            <a class="buy_link" href="">
+                                Porsche 911
+                            </a>
+                        </h3>
+                        <span class="version">
+                            3.6 
+                        </span>
+                    </div>
+                    <ul class="box_specs">
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="car_value">
+                        <span class="coin">
+                            R$
+                        </span>
+                        <span class="value">
+                            998.000,00
+                        </span>
+                    </div> 
+                
+                </div>
+                <div class="card_car">
+                    <div class="box_photo">
+                        <div class="item_img">
+                            <img class="box_img" src="img/911_catalog.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="car_description">
+                        <h3 class="offers">
+                            <a class="buy_link" href="">
+                                Porsche 911
+                            </a>
+                        </h3>
+                        <span class="version">
+                            3.6 
+                        </span>
+                    </div>
+                    <ul class="box_specs">
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="car_value">
+                        <span class="coin">
+                            R$
+                        </span>
+                        <span class="value">
+                            998.000,00
+                        </span>
+                    </div> 
+                
+                </div>
+                <div class="card_car">
+                    <div class="box_photo">
+                        <div class="item_img">
+                            <img class="box_img" src="img/911_catalog.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="car_description">
+                        <h3 class="offers">
+                            <a class="buy_link" href="">
+                                Porsche 911
+                            </a>
+                        </h3>
+                        <span class="version">
+                            3.6 
+                        </span>
+                    </div>
+                    <ul class="box_specs">
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="car_value">
+                        <span class="coin">
+                            R$
+                        </span>
+                        <span class="value">
+                            998.000,00
+                        </span>
+                    </div> 
+                
+                </div>
+                <div class="card_car">
+                    <div class="box_photo">
+                        <div class="item_img">
+                            <img class="box_img" src="img/911_catalog.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="car_description">
+                        <h3 class="offers">
+                            <a class="buy_link" href="">
+                                Porsche 911
+                            </a>
+                        </h3>
+                        <span class="version">
+                            3.6 
+                        </span>
+                    </div>
+                    <ul class="box_specs">
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                        <li>
+                            <span class="car_icon">
+
+                            </span>
+                            <span class="car_icon">
+
+                            </span>
+                        </li>
+                    </ul>
+                    <div class="car_value">
+                        <span class="coin">
+                            R$
+                        </span>
+                        <span class="value">
+                            998.000,00
+                        </span>
+                    </div> 
+                
+                </div>
             </div>
-
-
+                
         </section>
 
         <section class="last_Section">
@@ -155,7 +486,7 @@
                         <form action="">
                             <div class="colum">
                                 <input class="nl_form_input" type="text" name="email"
-                                placeholder="Cadastre seu e-mail aqui">
+                                    placeholder="Cadastre seu e-mail aqui">
                                 <input class="nl_form_button" type="submit" value=">">
                             </div>
                         </form>
