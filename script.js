@@ -53,7 +53,6 @@ let intervalId = setInterval(function() {
     if (counter >= maxCount) {
         counter = 0;
     } else {
-        console.log(counter);
         list.style.setProperty('--calculation', 1);
         active += 1;
         if (active > lastPosition) {
