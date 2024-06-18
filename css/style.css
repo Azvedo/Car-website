@@ -144,7 +144,6 @@ header {
                 }
 
                 & .information {
-                    cursor: pointer;
                     border-radius: 30px;
                     height: 35px;
                     width: 120px;
@@ -154,6 +153,11 @@ header {
                     color: black;
                     font-weight: bold;
                     font-family: "League Gothic", sans-serif;
+
+                    &:hover{
+                        background-color: #78a408;
+                        cursor: pointer;
+                    }
                 }
             }
         }
@@ -443,6 +447,7 @@ header {
 
         & .icon_description{
             font-size: 12px;
+            font-weight: 700;
         }
     }
     
@@ -453,6 +458,7 @@ header {
     }
     
 }
+
 .car_description{
     background-color: #9b9b9b;
     text-align: center;
