@@ -41,12 +41,14 @@ nextButton.onclick = function () {
     counter = 0;
 }
 
-var map = L.map('map').setView([-8.05428, -34.8813], 13);
+var map = L.map('map').setView([-8.05428, -34.9539049], 13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+var marker = L.marker([-8.0554591,-34.9539049]).addTo(map)
 
 // Para passar as imagens dos carros em ofertas
 let intervalId = setInterval(function() {
