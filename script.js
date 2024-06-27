@@ -11,7 +11,7 @@ let firstPosition = 0;
 let lastPosition = items.length - 1;
 
 let counter = 0;
-let maxCount = 10; 
+let maxCount = 10;
 
 function setSlider() {
     let itemOld = container.querySelector('.list .item.active'); //Procura quem está com a classe active dentre os list items e retorna.
@@ -43,15 +43,15 @@ nextButton.onclick = function () {
 
 var map = L.map('map').setView([-8.05428, -34.9539049], 13);
 
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-var marker = L.marker([-8.0554591,-34.9539049]).addTo(map)
+var marker = L.marker([-8.0554591, -34.9539049]).addTo(map)
 
 // Para passar as imagens dos carros em ofertas
-let intervalId = setInterval(function() {
+let intervalId = setInterval(function () {
     if (counter >= maxCount) {
         counter = 0;
     } else {
@@ -65,3 +65,5 @@ let intervalId = setInterval(function() {
         counter++;
     }
 }, 7000);
+
+
